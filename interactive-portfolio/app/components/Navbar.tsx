@@ -1,20 +1,23 @@
 "use client";
-import Link from 'next/link';
+import Link from "next/link";
+import Darkmode from "./Darkmode";
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-800 text-white p-4 fixed w-full z-10 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-xl font-bold">
-          <Link href="/" aria-label="Home">My Portfolio</Link>
+    <nav className="bg-blue-900 text-white dark:bg-gray-800 dark:text-white py-4 px-6 fixed w-full z-10 shadow-md transition-colors duration-300">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+        <Link href="/" className="text-2xl font-bold no-underline">
+          My Portfolio
+        </Link>
+
+        <div className="flex items-center space-x-6">
+          <Link href="/" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Home</Link>
+          <Link href="/about" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">About</Link>
+          <Link href="/projects" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Projects</Link>
+          <Link href="/skills" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Skills</Link>
+          <Link href="/contactMe" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Contact</Link>
+          <Darkmode />
         </div>
-        <ul className="flex space-x-4">
-          <li><Link href="/" className="hover:text-gray-400" aria-label="Home">Home</Link></li>
-          <li><Link href="/about" className="hover:text-gray-400" aria-label="About">About</Link></li>
-          <li><Link href="/projects" className="hover:text-gray-400" aria-label="Projects">Projects</Link></li>
-          <li><Link href="/skills" className="hover:text-gray-400" aria-label="Skills">Skills</Link></li>
-          <li><Link href="/contactMe" className="hover:text-gray-400" aria-label="Contact">Contact</Link></li>
-        </ul>
       </div>
     </nav>
   );

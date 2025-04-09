@@ -1,0 +1,60 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F9FAFB; /* Light mode background */
+  color: #1F2937; /* Light mode text (charcoal) */
+}
+
+.dark body {
+  background-color: #111827; /* Dark mode background */
+  color: white; /* Dark mode text */
+}
+
+nav {
+  transition: all 0.3s ease;
+  background-color: #1E3A8A; /* Light mode navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark nav {
+  background-color: #1F2937; /* Dark mode navbar */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #374151;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #4B5563;
+}
+
+.dark p {
+  color: #D1D5DB; /* light gray for dark mode */
+}
+
+button {
+  background-color: #FBBF24;
+  color: #1E3A8A;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #F59E0B;
+}
