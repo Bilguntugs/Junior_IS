@@ -14,7 +14,7 @@ export default function Navbar() {
           <Link href="/" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Home</Link>
           <Link href="/about" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">About</Link>
           <Link href="/projects" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Projects</Link>
-          <Link href="/skills" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Skills</Link>
+          <Link href="/experiences" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Experiences</Link>
           <Link href="/contactMe" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Contact</Link>
           <Darkmode />
         </div>
