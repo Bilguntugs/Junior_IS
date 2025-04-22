@@ -1,0 +1,82 @@
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    background-color: #F9FAFB; /* Light navbar for contrast */
+    color: #1E3A8A; /* Deep Blue text */
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #374151;
+    backdrop-filter: blur(6px);
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark .navbar {
+    background-color: #1F2937; /* Charcoal */
+    color: white;
+  }
+  
+  /* Nav links */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.25rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    background-color: rgba(30, 58, 138, 0.8); /* Semi-transparent Deep Blue */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #FBBF24; /* Warm Golden Yellow */
+    color: #1E3A8A; /* Deep Blue text on hover */
+  }
+  
+  .dark .nav-link {
+    background-color: #1F2937;
+    color: white;
+  }
+  
+  .dark .nav-link:hover {
+    background-color: #374151;
+  }
+  
+  /* Dark mode toggle button */
+  .dark-toggle {
+    padding: 0.25rem 0.75rem;
+    background-color: #FBBF24; /* Golden Yellow */
+    color: #1E3A8A; /* Deep Blue */
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-toggle:hover {
+    background-color: #f59e0b; /* Deeper Yellow */
+  }
+
+  /* Active link highlighter */
+  .nav-link.active {
+    background-color: #FBBF24; /* Warm Yellow highlight */
+    color: #1E3A8A; /* Deep Blue text */
+  }
+  
+  .dark .nav-link.active {
+    background-color: #374151; /* Darker gray highlight */
+    color: #FBBF24; /* Yellow text */
+  }
+  

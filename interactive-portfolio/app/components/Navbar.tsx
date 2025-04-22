@@ -1,23 +1,20 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Darkmode from "./Darkmode";
 
 export default function Navbar() {
-  return (
-    <nav className="bg-blue-900 text-white dark:bg-gray-800 dark:text-white py-4 px-6 fixed w-full z-10 shadow-md transition-colors duration-300">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold no-underline">
-          My Portfolio
-        </Link>
+  const pathname = usePathname();
 
-        <div className="flex items-center space-x-6">
-          <Link href="/" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Home</Link>
-          <Link href="/about" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">About</Link>
-          <Link href="/projects" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Projects</Link>
-          <Link href="/experiences" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Experiences</Link>
-          <Link href="/contactMe" className="text-white no-underline hover:text-blue-300 dark:hover:text-yellow-300 transition-colors">Contact</Link>
-          <Darkmode />
-        </div>
+  return (
+    <nav className="navbar">
+      <div className="navbar-links">
+        <Link href="/" className={`nav-link ${pathname === "/" ? "active" : ""}`}>Home</Link>
+        <Link href="/about" className={`nav-link ${pathname === "/about" ? "active" : ""}`}>About</Link>
+        <Link href="/projects" className={`nav-link ${pathname === "/projects" ? "active" : ""}`}>Projects</Link>
+        <Link href="/experiences" className={`nav-link ${pathname === "/experiences" ? "active" : ""}`}>Experiences</Link>
+        <Link href="/contactMe" className={`nav-link ${pathname === "/contactMe" ? "active" : ""}`}>Contact</Link>
+        <Darkmode />
       </div>
     </nav>
   );

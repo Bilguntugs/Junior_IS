@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 export default function Darkmode() {
   const [isDark, setIsDark] = useState(false);
 
-  // On mount, read local storage or system preference
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -32,11 +31,7 @@ export default function Darkmode() {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      aria-label="Toggle Dark Mode"
-      className="bg-yellow-400 text-gray-800 px-3 py-1 rounded hover:bg-yellow-500 transition"
-    >
+    <button onClick={toggleTheme} className="dark-toggle">
       {isDark ? "🌙 Dark" : "☀️ Light"}
     </button>
   );
