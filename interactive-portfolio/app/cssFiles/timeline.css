@@ -1,0 +1,120 @@
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: #FBBF24;
+    z-index: 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .timeline-date {
+    font-weight: bold;
+    color: #FBBF24;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .toggle-button {
+    background: transparent; /* Transparent background */
+    border: none;
+    color: #FBBF24; /* Yellow arrow */
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-button:hover {
+    transform: scale(0.7); /* Slight zoom effect */
+  }
+  
+  .timeline-content {
+    background-color: #F9FAFB;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+    max-width: 90%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover preview when not active */
+  .timeline-content.hovered {
+    max-height: 10px; /* Preview height */
+    opacity: 1;
+    color: #1E3A8A; /* Deep Blue text */
+  }
+  
+  /* Full toggle on click */
+  .timeline-content.active {
+    max-height: 500px; /* Fully expanded */
+    opacity: 1;
+    color: #1E3A8A; /* Deep Blue text */
+  }
+  
+  .timeline-content p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .timeline-content.active p {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+  
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background: #FBBF24;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item.left .timeline-content::after {
+    right: -6px;
+  }
+  
+  .timeline-item.right .timeline-content::after {
+    left: -6px;
+  }
+  
