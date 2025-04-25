@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import InfiniteScroll from '@/components/scroll';
+import Footer from '@/components/Footer'; // Import Footer
 import '@/cssFiles/globals.css';
 import '@/cssFiles/homepage.css';
 import '@/cssFiles/loading.css';
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </InfiniteScroll>
+        <Footer /> {}
       </body>
     </html>
   );
