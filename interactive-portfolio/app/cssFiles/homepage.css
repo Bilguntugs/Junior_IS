@@ -1,6 +1,6 @@
-/* Home Page */
+/* Home Page CSS */
 .home {
-    background-color: #1E3A8A; /* Deep Blue */
+    background-color: #1E3A8A; 
     color: white;
     min-height: 100vh;
     display: flex;
@@ -10,8 +10,8 @@
   }
   
   .dark .home {
-    background-color: #111827; /* Darker Blue for dark mode */
-    color: #F9FAFB; /* Light text in dark mode */
+    background-color: #111827; 
+    color: #F9FAFB; 
   }
   
   .home-content {
@@ -52,22 +52,22 @@
     line-height: 1.5;
   }
   
-  /* About/Contact/Projects/Experiences Pages */
+  /* Other Pages */
   .page {
     padding: 2.5rem;
     text-align: center;
-    background-color: #FEF3C7; /* Pale Sand */
+    background-color: #FEF3C7; 
   }
   
   .page h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #1E3A8A; /* Deep Blue */
+    color: #1E3A8A; 
   }
   
   .page p {
     font-size: 1rem;
-    color: #1F2937; /* Charcoal */
+    color: #1F2937; 
   }
   

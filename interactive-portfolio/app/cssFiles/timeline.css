@@ -44,9 +44,9 @@
     cursor: pointer;
   }
   .toggle-button {
-    background: transparent; /* Transparent background */
+    background: transparent; 
     border: none;
-    color: #FBBF24; /* Yellow arrow */
+    color: #FBBF24; 
     font-size: 1rem;
     cursor: pointer;
     padding: 0;
@@ -55,7 +55,7 @@
   }
   
   .toggle-button:hover {
-    transform: scale(0.7); /* Slight zoom effect */
+    transform: scale(0.7); 
   }
   
   .timeline-content {
@@ -73,18 +73,18 @@
     cursor: pointer;
   }
   
-  /* Hover preview when not active */
+  /* Hover preview */
   .timeline-content.hovered {
-    max-height: 10px; /* Preview height */
+    max-height: 10px; 
     opacity: 1;
-    color: #1E3A8A; /* Deep Blue text */
+    color: #1E3A8A; 
   }
   
-  /* Full toggle on click */
+  /* toggle on click */
   .timeline-content.active {
-    max-height: 500px; /* Fully expanded */
+    max-height: 500px;
     opacity: 1;
-    color: #1E3A8A; /* Deep Blue text */
+    color: #1E3A8A; 
   }
   
   .timeline-content p {
