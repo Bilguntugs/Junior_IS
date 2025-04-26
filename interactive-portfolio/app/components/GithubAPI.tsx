@@ -23,7 +23,7 @@ const languageLogoMap: { [key: string]: string } = {
 };
 
 const customDescriptions: { [key: string]: string } = {
-  'backtesting.py': 'Custom description for backtesting trading strategies in Python.',
+  'backtesting.py': 'Contributed to an open-source Python project, worked on the backend testing.',
   'Junior_IS': 'My Junior IS project using Next.js, TypeScript, and GitHub API.',
   'gemini-agents-toolkit': 'Toolkit for Gemini AI agent-based systems.',
   'python-beginner-projects': 'Beginner-friendly Python projects for learning and improving skills.'

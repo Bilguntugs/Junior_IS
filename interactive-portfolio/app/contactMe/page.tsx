@@ -24,7 +24,10 @@ export default function ContactMePage() {
 
   return (
     <div className="contact-container">
-      <h2>Contact Me</h2>
+      <h2 className="section-title">
+        <span className="highlight">Contact Me</span>
+      </h2>
+
 
       <form id="contact-form" onSubmit={sendEmail}>
         <label htmlFor="name">Name</label>

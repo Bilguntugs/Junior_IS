@@ -4,19 +4,19 @@ import '../cssFiles/timeline.css';
 
 const experiences = [
   {
-    date: 'Jan 2023',
-    title: 'Frontend Developer',
-    description: 'Worked on UI improvements for client dashboards.',
+    date: 'May 2023 - August 2023',
+    title: 'Sales Assistant',
+    description: 'I helped customers with their purchases, managed inventory, and provided excellent customer service.',
   },
   {
-    date: 'Aug 2022',
-    title: 'Software Intern',
-    description: 'Built internal tools with Node.js and helped automate tasks.',
+    date: 'September 2022 - Present',
+    title: 'Recording Crew',
+    description: 'I record and edit the official school events/concerts and  uploads them to the schools YouTube channel and Archive.',
   },
   {
-    date: 'May 2021',
-    title: 'Freelancer',
-    description: 'Developed personal projects and learned modern web technologies.',
+    date: 'May 2024 - August 2024',
+    title: 'Internship',
+    description: 'I worked in a social monitoring company, where I was responsible for creating a program that fetches data from their website and send it to ChatGPT to generate a report.',
   },
 ];
 

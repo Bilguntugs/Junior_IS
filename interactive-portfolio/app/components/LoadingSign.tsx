@@ -1,4 +1,3 @@
-// components/LoadingSpinner.tsx
 export default function LoadingSpinner() {
     return (
       <div style={spinnerStyle}>

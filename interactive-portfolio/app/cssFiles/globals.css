@@ -1,27 +1,18 @@
-html,
-body {
+/* Global Base Styles */
+html, body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #1E3A8A;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #1E3A8A !important; 
   color: #F9FAFB;
 }
 
 .dark body {
-  background-color: #111827;
+  background-color: #111827 !important;
   color: #F9FAFB;
 }
 
-.layout-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  align-items: center;
-  background-color: inherit; 
-  padding-top: 5rem;
-}
 
 html, body, .layout-wrapper, .layout-container {
   background-color: #1E3A8A; 
@@ -34,14 +25,47 @@ html.dark .layout-container {
 }
 
 
-@media (min-width: 768px) {
-  .layout-wrapper {
-    align-items: center;
-  }
+
+.layout-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: inherit;
+  padding-top: 5rem;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
 }
+
 
 .layout-container {
   width: 100%;
   max-width: 1024px;
   padding: 1rem;
+  background-color: inherit;
+  flex: 1; 
+  margin: 0 auto; 
+}
+
+
+.layout-wrapper > * {
+  background-color: inherit !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.layout-wrapper::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .layout-wrapper {
+    align-items: center;
+  }
 }

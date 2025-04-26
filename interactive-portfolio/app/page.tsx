@@ -5,19 +5,24 @@ export default function Home() {
     <div className="home">
       <div className="home-content">
         <Image
-          src="/publicImages/TempProfile.jpg"
+          src="/publicImages/Profile.jpg"
           alt="Profile"
-          width={250}
-          height={250}
+          width={350}
+          height={350}
           className="profile-img"
         />
-        <div className="intro-text">
+        <div>
           <h1 className="intro-title">
             <span className="highlight">Bilguuntugs Enkhbayar</span>
           </h1>
-          <p className="intro-subtext">
-            Hi, I'm Bg! I'm building this portfolio for a school project to show my coding and project work.
-          </p>
+          <div className="intro-subtext-container">
+            <p className="intro-subtext">
+              Welcome to my portfolio! I'm Bilguuntugs Enkhbayar, but everyone calls me Bg. This space that I created is to showcase my journey as a developer, combining what I've learned with the projects I've built.
+              Whether it's web development, programming challenges, or exploring new tech, I’m always open for more improvement and learning.
+              This portfolio highlights my technical skills, creative thinking, and dedication to growing as a computer scientist.
+              Feel free to check out my work and get to know me better!
+            </p>
+          </div>
         </div>
       </div>
     </div>

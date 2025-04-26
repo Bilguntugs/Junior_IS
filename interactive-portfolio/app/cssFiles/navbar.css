@@ -28,8 +28,8 @@
   }
   
   .nav-link {
-    padding: 0.25rem 1rem;
-    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 9999px;
     background-color: rgba(30, 58, 138, 0.8); 
@@ -54,7 +54,7 @@
   
   /* Dark mode button */
   .dark-toggle {
-    padding: 0.25rem 0.75rem;
+    padding: 0.25rem 0.5rem;
     background-color: #FBBF24; 
     color: #1E3A8A; 
     border: none;

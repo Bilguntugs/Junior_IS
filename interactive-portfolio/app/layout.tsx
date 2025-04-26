@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import InfiniteScroll from '@/components/scroll';
-import Footer from '@/components/Footer'; // Import Footer
+import Footer from '@/components/Footer';
 import '@/cssFiles/globals.css';
 import '@/cssFiles/homepage.css';
 import '@/cssFiles/loading.css';
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="theme-body">
         <Navbar />
         <InfiniteScroll>
           <div className="layout-wrapper">
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </InfiniteScroll>
-        <Footer /> {}
+        <Footer />
       </body>
     </html>
   );

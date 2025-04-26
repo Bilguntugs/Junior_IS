@@ -24,8 +24,8 @@ export default function InfiniteScroll({ children }: { children: React.ReactNode
       setLoading(false);
       setTimeout(() => {
         isNavigating.current = false;
-      }, 500); // Cooldown after navigation
-    }, 1000); // Loading duration
+      }, 500); 
+    }, 1000); 
   }, [router]);
 
   const handleWheel = useCallback((event: WheelEvent) => {
@@ -39,12 +39,10 @@ export default function InfiniteScroll({ children }: { children: React.ReactNode
     const isAtTop = scrollTop <= 5;
 
     if (event.deltaY > 0) {
-      // User scrolled DOWN
       if (isAtBottom || documentHeight <= windowHeight + 5) {
         navigateToPage(pageIndex + 1);
       }
     } else if (event.deltaY < 0) {
-      // User scrolled UP
       if (isAtTop) {
         navigateToPage(pageIndex - 1);
       }

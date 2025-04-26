@@ -1,61 +1,81 @@
-.skills-logos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80px;
-    padding: 0.5rem;
-  }
-  
-  .skill img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-  }
-  
-  .skill span {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    text-align: center;
-    color: white;
-  }
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
 
-  .about-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
-    flex-wrap: wrap; 
-  }
-  
-  .bio-section {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-  }
-  
-  .skills-section {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-  }
-  
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .bio-section,
-    .skills-section {
-      max-width: 100%;
-    }
-  }
-  
-  
+.bio-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.skills-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 3rem; 
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  background: linear-gradient(to right, #1E3A8A, #FBBF24); 
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #F9FAFB;
+  font-weight: bold;
+}
+
+.card-container {
+  background-color: #F9FAFB; 
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  max-width: 600px;
+  color: #1E3A8A;
+}
+
+.dark .card-container {
+  background-color: #374151;
+  color: #FBBF24; 
+}
+
+.skills-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  padding: 0.5rem;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.skill span {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #1E3A8A; 
+}
+
+.dark .skill span {
+  color: #FBBF24;
+}
